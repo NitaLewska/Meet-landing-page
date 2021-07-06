@@ -1,6 +1,7 @@
 /* Box Model Fix */
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 *, *:before, *:after {
@@ -8,14 +9,12 @@ html {
     margin: 0px;
 }
 
-/*Colors*/
-
-
-
 body {
     width: 100%;
     font-family: 'Red Hat Display', sans-serif;
     background-color:var(--background);
+    overflow-x: hidden;
+    /*Colors*/
     --background: #F2F2F2;
     --green: #4D96A9;
     --light-purple: #D9B8FF;
@@ -59,7 +58,7 @@ header{
     align-self:flex-end;
 }
 
-h1{
+h1 {
     font-weight: 900;
     font-size: 64px;
     line-height: 64px;
@@ -149,6 +148,7 @@ button{
     content: " ";
     background-image:url(assets/desktop/image-footer.jpg);
     background-size:cover;
+    background-position: center;
     position: absolute;
     left: 0;
     right: 0;
@@ -219,4 +219,152 @@ button{
     justify-content: center;
     background-color:var(--background);
     z-index: 1;
+}
+
+@media screen and (max-width: 1155px) {
+
+    .groupchat {
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 80px;
+        margin-left: -5vw;
+        margin-right: -5vw;
+        justify-content:space-between;
+    }
+
+    .groupchat img{
+        flex-grow: 1;
+        max-width: 53vw;
+        width: 52vw;
+    }
+
+    .groupchat h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .groupchat_text {
+        order: 3;
+        flex-grow: 1;
+        margin-top: 72px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+    .groupchat_text p{
+        max-width: 460px;
+        margin: 32px auto;
+    }
+
+    .groupchat_text p br {
+        display: none;
+    }
+
+    .modernuse_images {
+        width: 90%;     
+    }
+
+    .modernuse_images img {
+        width:23%;
+    }
+
+    .modernuse_text p br {
+        display: none;
+    }
+    
+    .together, .together::before {
+        height: 428px;
+    }
+
+    .together_text {
+        flex-direction:column;
+        flex-wrap: nowrap;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 66px;
+    }
+
+    .together_text h2{
+        margin-top: 92px;
+    }
+
+    .together_text p {
+        margin: 32px auto;
+        max-width: 80%;
+    }
+
+    .together_text button{
+        margin: 0;
+    }
+
+    .together_text p br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .groupchat h1{
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .groupchat_text p {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 24px;
+        margin-bottom: 32px;
+    }
+
+    .groupchat div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .groupchat_text_button_info {
+        margin-top: 24px;
+        margin-left: 0px;
+    }
+
+    .modernuse_text {
+        width: auto;
+        max-width: 85%;
+    }
+
+    .modernuse h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .modernuse h3{
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 4px;
+    }
+
+    .modernuse_text h2 br {
+        display: none;
+    }
+
+    .modernuse_text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .together h2{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .together p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .together::before {
+        background-image:url(assets/mobile/image-footer.jpg)
+    }
 }
