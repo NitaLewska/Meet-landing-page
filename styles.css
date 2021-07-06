@@ -72,7 +72,7 @@ h1 {
     font-size: 18px;
     line-height: 26px;
     color:var(--grey);
-
+    margin-top: 2px;
 }
 
 .groupchat_text span {
