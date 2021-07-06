@@ -283,6 +283,7 @@ button{
 
     .modernuse_images img {
         width:23%;
+        height: auto;
     }
 
     .modernuse_text p br {
