@@ -169,10 +169,14 @@ button{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    align-items: center;
 }
 
 .together_text h2{
     color:var(--light);
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
 }
 
 .together_text p{
