@@ -366,6 +366,21 @@ button{
         display: none;
     }
 
+    .modernuse_images {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .modernuse_images img {
+        width:47%;
+        height: auto;
+    }
+
+    .modernuse_images img:nth-of-type(1), img:nth-of-type(2) {
+        margin-bottom: 6%;
+    }
+
     .modernuse_text p {
         font-size: 16px;
         line-height: 26px;
