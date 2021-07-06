@@ -19,6 +19,8 @@ body {
     --green: #4D96A9;
     --light-purple: #D9B8FF;
     --dark-purple: #855FB1;
+    --hover-purple: #B18BDD;
+    --hover-green:#71C0D4;
     --aqua: #8FE3F9;
     --dark: #28283D;
     --light: #FAFAFA;
@@ -96,10 +98,20 @@ button{
     background-color: var(--green);
 }
 
+.groupchat_text_button_download:hover {
+    background-color:var(--hover-green);
+    cursor: pointer;
+}
+
 .groupchat_text_button_info {
     width: 139px;
     margin-left: 16px;
     background-color:var(--dark-purple);
+}
+
+.groupchat_text_button_info:hover {
+    background-color:var(--hover-purple);
+    cursor: pointer;
 }
 
 .modernuse_images {
@@ -192,6 +204,11 @@ button{
     background-color: var(--dark-purple);
     z-index: 1;
     margin-left: 92px;
+}
+
+.together_text_button_download:hover {
+    background-color:var(--hover-purple);
+    cursor: pointer;
 }
 
 .together_text span{
